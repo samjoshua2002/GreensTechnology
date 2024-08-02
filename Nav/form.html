@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="name">
+                <label>Name</label>
+                <input type="text" name="name" id="name" placeholder="Name.." onchange="handle(event)">
+            </div>
+            <div class="phone">
+                <label>Phone_Number</label>
+            <input type="number" name="phone" id="phone" placeholder="Phone_no.." onchange="handle(event)">
+            </div>
+            <div class="dob">
+                <label>DOB</label>
+            <input type="date" name="dob" id="dob" onchange="handle(event)">
+            </div>
+            <div class="gender">
+            <label>Gender</label>
+            <div class="geninp">
+            <div><input type="radio" name="gender" value="male" id="male" onchange="handle(event)">Male</div>
+            <div> <input type="radio" name="gender" value="female" id="female" onchange="handle(event)">Female</div>
+            </div>
+            </div>
+           <div class="des">
+            <label>Description</label>
+            <textarea name="description" id="description" placeholder="Type..." onchange="handle(event)"></textarea>
+           </div>
+           <div class="btn">
+            <button type="button" onclick="sub(event)">Submit</button>
+           </div>
+        </form>
+    </div>
+
+    <script>
+        const array={name:"",phone:null,dob:null,gender:"",description:"hi"};
+        const handle=(e)=>{
+            const name=e.target.name;
+            const value=e.target.value;
+                array[name] = value;
+            console.log(array);
+        };
+
+        const sub=(e)=>{
+            e.preventDefault();
+            alert(`Name:${array.name}\nPhone: ${array.phone}\nDOB: ${array.dob}\nGender: ${array.gender}\nDescription: ${array.description}`);
+        };
+    </script>
+</body>
+</html>

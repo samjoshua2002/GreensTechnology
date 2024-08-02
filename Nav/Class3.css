@@ -1,0 +1,83 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ 
+.navbar{
+    padding:10px 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: black;
+    
+}
+
+.navbar-brand{
+    margin-left: 10px;
+    font-size: 30px;
+    font-weight: lighter;
+    color: white;
+    font-family: fantasy;
+}
+
+a img{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    border-radius: 10px;
+}
+
+.navbar-items{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-link{
+    padding: 5px;
+}
+
+.nav-link:hover{
+    /* border: 2px solid white; */
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.5);
+}
+
+.login{
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.drop{
+    position: relative;
+}
+
+.drop-down{
+    /* display: none; */
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    list-style: none;
+    width:100px;
+    padding: 10px;
+    text-align: center;
+    top: 22px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.item:hover{
+    scale: 1.1;
+}
+.item{
+    margin:10px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mypage</title>
+    <link rel="stylesheet" href="Class3.css">
+</head>
+<body>
+    <section>
+        <nav>
+            <div class="navbar">
+                <a href="#" class="navbar-brand">
+                    <img src="assets/bg.jpg" alt="">Web
+                </a>
+                <div>
+                    <ul  class="navbar-items">
+                        <li class="nav-link"><a href="#">HOME</a></li>
+                        <li class="nav-link"><a href="#">ABOUT</a></li>
+                        <li class="nav-link"><a href="#">CONTACT</a></li>
+                        <li class="nav-link drop"><a href="#">HELP<i id="btn" class="bi bi-arrow-down"></i></a>
+                            <ul class="drop-down">
+                                <li class="item">Phone</li><hr>
+                                <li class="item">Email</li><hr>
+                                <li class="item">Post</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="login">
+                    <a href="form.html"><i class="bi bi-person-circle"></i></a>
+                </div>
+            </div>
+        </nav>
+    </section>
+    frame work=>manual typing
+    library=> predefined codes
+
+    <script>
+        document.getElementById('btn').addEventListener('click',function() {
+            const element=document.querySelector('.drop-down');
+            if(element.style.display==='block'){
+                element.style.display = 'none';
+            } else {
+                element.style.display = 'block';
+            }
+        })
+    </script>
+</body>
+</html>
