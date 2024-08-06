@@ -13,7 +13,7 @@
         button{
           
   align-items: center;
-  background-color: #fff;
+  background-color: #c72626;
   border-radius: 5px;
   box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
   box-sizing: border-box;
@@ -43,51 +43,145 @@
 .button-35:hover {
   box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
 }
-
+.main{
+    height: 100vh;
+}
 .div{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
     border: solid;
+    
     
    
     
 }
 p{
-    font-size: 50px;
-    background-color: red;
-    color: black;
-    text-align: center;
-    border-radius: 10px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 200px;
+    
+     text-align: center;
+    
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    animation: show 3s ease infinite;
 }
+@keyframes show{
+            0%{ 
+                background-color: red;
+                color: black;
+            }
+            5%{
+                background-color: blue;
+            color: white;
+            }
+            10%{
+                background-color: red;
+                color: black;
+            }
+            15%{
+                background-color: blue;
+            color: white;
+            }
+            20%{
+                background-color: red;
+                color: black;
+            }
+            25%{
+                background-color: blue;
+            color: white;
+            }
+            30%{
+                background-color: red;
+                color: black;
+            }
+            35%{
+                background-color: blue;
+            color: white;
+            }
+            40%{
+                background-color: red;
+                color: black;
+            }
+            45%{
+                background-color: blue;
+                color: white;
+            }
+            50%{
+                background-color: red;
+                color: black;
+            }
+            55%{
+                background-color: blue;
+            color: white;
+            }
+            60%{
+                background-color: red;
+                color: black;
+            }
+            65%{
+                background-color: blue;
+            color: white;
+            }
+            70%{
+                background-color: red;
+                color: black;
+            }
+            75%{
+                background-color: blue;
+            color: white;
+            }
+            80%{
+                background-color: red;
+                color: black;
+            }
+            85%{
+                background-color: blue;
+            color: white;
+            }
+            90%{
+                background-color: red;
+                color: black;
+            }
+            95%{
+                background-color: blue;
+            color: white;
+            }
+            100%{
+                background-color: red;
+                color: black;
+            }
 
         
     </style>
-    <div class="div">
-        <h1> Switch Case Examples....</h1>
-    <label for=""><h1>Choose Day</h1> </label>
-    <div class="buttons">
-        <select name="" id="day" style="border-radius: 2px; padding: 5px;
-        border:2px solid black; color: blue;">
-               <option value="1">Monday</option>
-               <option value="2">Tuesday</option>
-               <option value="3">Wednesday</option>
-               <option value="4">Thursday</option>
-               <option value="5">Friday</option>
-               <option value="6">Saturday</option>
-               <option value="7">Sunday</option>
-           </select>
-           
-           <button  onclick="showMessage()">Show Message</button>
-           <p id="result"></p>
+    <div class="main">
+        <div class="div">
+        
+            <h1> Switch Case Examples....</h1>
+        <label for=""><h1>Choose Day</h1> </label>
+        <div class="buttons">
+            <select name="" id="day" style="border-radius: 2px; padding: 5px;
+            border:2px solid black; color: blue;">
+                   <option value="1">Monday</option>
+                   <option value="2">Tuesday</option>
+                   <option value="3">Wednesday</option>
+                   <option value="4">Thursday</option>
+                   <option value="5">Friday</option>
+                   <option value="6">Saturday</option>
+                   <option value="7">Sunday</option>
+               </select>
+               
+               <button  onclick="showMessage()">Show Message</button>
+               
+    
+        </div>
+       
+    
+        </div>
+        <p id="result"></p>
 
     </div>
-   
-
-    </div>
+    
     
     <script>
         function showMessage(){
