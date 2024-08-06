@@ -1,25 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentt</title>
-</head>
-<body>
+    <title>Document</title>
     <style>
-        
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            padding: 15px;
+            align-items: center;
+            justify-content: space-between;
+            font-weight: bold;
+            background: #ebeef1;
+        }
+
+        .items {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        li {
+            font-size: 32px;
+            font-weight: 500;
+            padding: 20px;
+            text-align: center;
+            margin: 30px;
+            width: 100px;
+            background: #ebeef1;
+            border-radius: 10px; /* Optional: add border-radius for a smoother effect */
+            transition: all 0.3s ease; /* Optional: smooth transition */
+        }
+
+        li:hover {
+            font-size: 32px;
+            padding: 20px;
+            margin: 30px;
+            background: #ebeef1;
+            border-radius: 50px;
+            box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16), 
+                        -10px -10px 10px -1px rgba(255, 255, 255, 0.70);
+            transition: all 0.3s ease; /* Optional: smooth transition */
+        }
     </style>
+</head>
 
-<div class="container">
-    <div class="box">
-        <label for="name">Name</label>
-        <input type="text">
-        <label for="Age">Age</label>
-        <input type="number">
-        <label for=""></label>
-
-    </div>
-</div>
-
+<body>
+    <nav>
+        <div class="logo">
+            <p>logo</p>
+        </div>
+        <div>
+            <ul class="items">
+                <li>Home</li>
+                <li>About</li>
+                <li>Skills</li>
+                <li>Contacts</li>
+            </ul>
+        </div>
+        <div>
+            <p>Logout</p>
+        </div>
+    </nav>
 </body>
+
 </html>
