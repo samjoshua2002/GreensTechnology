@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Add Numbers</h1>
+    <input type="text" class="input1" placeholder=" enter first number">
+    <input type="text" class="input2" placeholder=" enter second number">
+    <button onclick="AddNumber()">Add</button>
+    <h2 id="results">hkh</h2>
+    <script>
+        function AddNumber() {
+            const inp1 = document.querySelector('.input1');
+            const inp2 = document.querySelector(".input2");
+            const num1 = parseInt(inp1.value);
+            const num2 =parseInt(inp2.value);
+            if (!isNaN(num1) &&  !isNaN(num2)) {
+                const sum = num1+num2;
+                document.getElementById("results").innerText = `Result: ${sum}`;
+
+                
+            } else{
+                document.getElementById("results").innerHTML= "enter a valid number"
+            }
+            
+        }
+    </script>
+
+    
+</body>
+</html>
