@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Calculator</h1>
+        <div class="panel">
+            Results
+        </div>
+        <input type="text" value="" placeholder="Enter no  1">
+        <input type="text" value="" placeholder="Enter no  2">
+        <br>
+<div class="btn">
+
+    <button> +</button>
+    <button> -</button>
+    <button> *</button>
+    <button> /</button>
+    <button> %</button>
+    <button> ^ </button>
+    </div>
+    <style>
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: content-box;
+                
+            }
+            body{
+                justify-content: center;
+                display: flex;
+                align-items: center;
+                height: 100vh;
+                background-color: gainsboro;
+            }
+            .container{
+                background-color: white;
+                padding: 30px;
+                width: 280px;
+                height: 350px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 20px;
+                
+            }
+            h1{
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+                display: flex;
+                margin-top: 10px;
+                justify-content: center;
+                
+                
+            }
+            .panel{
+                background-color: whitesmoke;
+                border: 1px solid #ddd;
+                min-height: 50px;
+                margin-top: 10px;
+                font-size: 30px;
+                padding-top: 10px;
+                padding-left: 10px;
+                border-radius: 5px;
+
+            }
+
+            input{
+                border: 1px solid #ddd;
+                padding-top: 10px;
+                border-radius: 20px;
+                padding-left: 20px;
+                margin-top: 15px;
+                width: calc(100% - 20px);
+                padding-bottom: 8px;
+                
+            }
+            button{
+                margin-top: 20px;
+                padding: 20px;
+                
+            }
+            .btn {
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+     margin-left: 26px;
+
+    
+    gap: 10pxpx; /* Adjust the gap between grid items if needed */
+    
+}
+button{
+    padding: 17px;
+    width: 10px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 5px;
+
+    
+}
+
+        </style>
+
+        
+    </div>
+</body>
+</html>

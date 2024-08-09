@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><div class="main">
+    
+
+    <h1> Simple Calculator</h1>
+    <div class="panel">
+
+        <h2 id="results"></h2>
+    </div>
+    <div class="questions">
+        <input type="text" class="input1" placeholder=" enter first number">
+        <input type="text" class="input2" placeholder=" enter second number">
+
+    </div>
+    <div class="buttons">
+
+        <button onclick="AddNumber()">+</button>
+        <button onclick="SubNumber()">-</button>
+        <button onclick="MulNumber()">*</button>
+        <button onclick="DivNumber()">/</button>
+        <button onclick="PercentageNumber()">%</button>
+        <button onclick="Power()">^</button>
+    </div>
+</div>
+    <script>
+        function AddNumber() {
+            const inp1 = document.querySelector('.input1');
+            const inp2 = document.querySelector(".input2");
+            const num1 = parseInt(inp1.value);
+            const num2 =parseInt(inp2.value);
+            if (!isNaN(num1) &&  !isNaN(num2)) {
+                const sum = num1+num2;
+                document.getElementById("results").innerText = `Result: ${sum}`;
+
+                
+            } else{
+                document.getElementById("results").innerHTML= "enter a valid number"
+            }
+            
+        }
+        function SubNumber() {
+            const inp1 = document.querySelector('.input1');
+            const inp2 = document.querySelector(".input2");
+            const num1 = parseInt(inp1.value);
+            const num2 =parseInt(inp2.value);
+            if (!isNaN(num1) &&  !isNaN(num2)) {
+                const sum = num1-num2;
+                document.getElementById("results").innerText = `Result: ${sum}`;
+
+                
+            } else{
+                document.getElementById("results").innerHTML= "enter a valid number"
+            }
+            
+        }
+        function MulNumber() {
+            const inp1 = document.querySelector('.input1');
+            const inp2 = document.querySelector(".input2");
+            const num1 = parseInt(inp1.value);
+            const num2 =parseInt(inp2.value);
+            if (!isNaN(num1) &&  !isNaN(num2)) {
+                const sum = num1*num2;
+                document.getElementById("results").innerText = `Result: ${sum}`;
+
+                
+            } else{
+                document.getElementById("results").innerHTML= "enter a valid number"
+            }
+            
+        }
+        function DivNumber() {
+            const inp1 = document.querySelector('.input1');
+            const inp2 = document.querySelector(".input2");
+            const num1 = parseInt(inp1.value);
+            const num2 =parseInt(inp2.value);
+            if (!isNaN(num1) &&  !isNaN(num2)) {
+                const sum = num1/num2;
+                document.getElementById("results").innerText = `Result: ${sum}`;
+
+                
+            } else{
+                document.getElementById("results").innerHTML= "enter a valid number"
+            }
+            
+        }
+        function PercentageNumber() {
+            const inp1 = document.querySelector('.input1');
+            const inp2 = document.querySelector(".input2");
+            const num1 = parseInt(inp1.value);
+            const num2 =parseInt(inp2.value);
+            if (!isNaN(num1) &&  !isNaN(num2)) {
+                const sum = num1%num2;
+                document.getElementById("results").innerText = `Result: ${sum}`;
+
+                
+            } else{
+                document.getElementById("results").innerHTML= "enter a valid number"
+            }
+            
+        }
+        function Power() {
+            const inp1 = document.querySelector('.input1');
+            const inp2 = document.querySelector(".input2");
+            const num1 = parseInt(inp1.value);
+            const num2 =parseInt(inp2.value);
+            if (!isNaN(num1) &&  !isNaN(num2)) {
+                const sum = num1**num2;
+                document.getElementById("results").innerText = `Result: ${sum}`;
+
+                
+            } else{
+                document.getElementById("results").innerHTML= "enter a valid number"
+            }
+            
+        }
+    </script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: content-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        body {
+            background-color: rgb(190, 190, 190);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .main {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            width: 300px;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        
+        .panel {
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            font-size: 20px;
+            color: #333;
+            min-height: 50px;
+        }
+        
+        .questions {
+            margin-bottom: 20px;
+        }
+        
+        .questions input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            text-align: center;
+        }
+        
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        button {
+            background-color: black;
+            border: none;
+            color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+        }
+        
+    </style>
+
+    
+</body>
+</html>
