@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
+* {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    color: black;
+}
+
+
+.navbar {
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+   
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    margin-left: 10px;
+    font-size: 30px;
+    font-weight: lighter;
+    color: black;
+    font-family: fantasy;
+}
+
+.brand{
+    transition: 0.9s ease;
+}
+
+.brand:hover {
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    letter-spacing: 3px;
+}
+
+a img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    border-radius: 10px;
+}
+
+.navbar-items {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-link {
+    padding: 10px;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover {
+    
+    border-radius: 5px;
+    box-shadow: 4px 4px 20px rgba(255, 255, 255, 0.5);
+}
+
+.login {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.resume {
+    position: relative;
+}
+
+.resume:hover .msg {
+    display: block;
+}
+
+.msg {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    color: black;
+    font-size: 13px;
+    width: 140px;
+}
+
+/* ------------ navbar --------------- */
+
+.container {
+    background-color: white;
+    color: black;
+    padding-top: 70px;
+}
+
+.main-content{
+    padding: 100px 0px 50px 0px;
+    /* display: none; */
+}
+
+h3 span {
+    color: #0fe;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+}
+
+.text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+.info {
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.icons {
+    margin-top: 40px;
+    display: flex;
+    gap: 10px;
+}
+
+.icons i {
+    border: 2px solid orange;
+    padding: 10px;
+    border-radius: 50px;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+
+
+
+.icons .icon:hover {
+    transform: scale(1.2);
+    box-shadow: 2px 2px 20px orange;
+    cursor: pointer;
+}
+
+.cv {
+    margin-top: 40px;
+}
+
+.cv button {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 50px;
+    background-color: orange;
+    box-shadow: 2px 2px 20px orange;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.cv button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* about */
+
+.about h1 span{
+    color: orange;
+}
+
+.about .info{
+    margin-top: 30px;
+}
+
+.about{
+    padding-bottom: 30px;
+    margin: 40px 0px;
+    /* display: none; */
+}
+
+/* skills */
+
+.skill-box{
+    padding-top: 30px;
+}
+
+.skills{
+margin-top: 100px;
+height: 70vh;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+position: relative;
+}
+
+.skills h2{
+    position: absolute;
+    top: 0px;
+    font-size: 30px;
+}
+
+.skills span{
+    color: orange;
+}
+
+.collection{
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    gap: 10px;
+}
+
+.collection p:hover{
+    color: orange;
+}
+
+.card1,.card2,.card3,.card4{
+    width: 10rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    background-color: rgba(255, 255, 255, 0.178);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.card1:hover, .card2:hover, .card3:hover, .card4:hover {
+    box-shadow: 2px 2px 20px #fff;
+}
+
+.collection .icon{
+    font-size: 30px;
+    color: orange;
+}
+
+.btn{
+    margin-top: 10px;
+}
+
+.btn button{
+    padding: 5px 8px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 50px;
+    background-color: orange;
+    box-shadow: 2px 2px 20px orange;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.btn button:hover{
+transform: scale(1.1);
+cursor: pointer;
+}
+
+
+/* contact */
+.contact{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;align-items: center;
+    padding: 40px 0px;
+}
+
+.box{
+    width: 600px;
+    text-align: center;
+}
+
+.box span{
+    color: or;
+}
+
+.name,.phone{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+input{
+    font-size: 15px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: orange;
+}
+textarea{
+    font-size: 15px;
+    padding: 5px;
+    margin-top: 10px;
+    width: 98%;
+    height: 300px;
+    border: none;
+    border-radius: 5px;
+    color: orange;
+}
+
+input:focus , textarea:focus{
+    border: 2px solid orange;
+    outline: none; 
+    background-color: transparent;
+}
+
+.submit{
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.submit button{
+    padding: 5px 8px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 50px;
+    background-color: orange;
+    box-shadow: 2px 2px 20px orange;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.submit button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    }
+
+.box h2{
+    margin-bottom: 20px;
+}
