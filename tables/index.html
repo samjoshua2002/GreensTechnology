@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: gainsboro;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            background-color: white;
+            padding: 30px;
+            width: 100%;
+            max-width: 600px;
+            border-radius: 20px;
+            box-shadow: 10px 10px 50px gray;
+             
+        }
+
+        h1 {
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 25px 15px;
+            
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        
+
+        .status {
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: white;
+            text-align: center;
+            
+        }
+
+        .open {
+            background-color: rgb(234, 154, 5);
+            padding-right: 33px;
+            
+        }
+
+        .on-hold {
+            background-color: rgb(242, 9, 9);
+            padding-right: 15px;
+        }
+
+        .progress {
+            background-color: rgb(0, 255, 17);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tables</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID-Number</th>
+                    <th>Customer</th>
+                    <th>Shipping</th>
+                    <th>Purchase</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2115</td>
+                    <td>Sam</td>
+                    <td>Japan</td>
+                    <td>$350</td>
+                    <td><span class="status progress">Progress</span></td>
+                </tr>
+                <tr>
+                    <td>2116</td>
+                    <td>Sanjay</td>
+                    <td>Japan</td>
+                    <td>$360</td>
+                    <td><span class="status open">Open</span></td>
+                </tr>
+                <tr>
+                    <td>2117</td>
+                    <td>Shakeen</td>
+                    <td>Japan</td>
+                    <td>$380</td>
+                    <td><span class="status on-hold">On hold</span></td>
+                </tr>
+                <tr>
+                    <td>2118</td>
+                    <td>Kumar</td>
+                    <td>Japan</td>
+                    <td>$350</td>
+                    <td><span class="status progress">Progress</span></td>
+                </tr>
+                <tr>
+                    <td>2119</td>
+                    <td>Sriram</td>
+                    <td>India</td>
+                    <td>$400</td>
+                    <td><span class="status open">Open</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
