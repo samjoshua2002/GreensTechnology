@@ -21,13 +21,16 @@
         </div>
     </div>
     <script>
+            let count=1;
         function savetoLocal(){
             const input1 =document.getElementById("localInput").value;
-            localStorage.setItem("mydata",input1);
+            localStorage.setItem(`${count}`,input1);
+            count++;
             alert("Data Saved To Local Storage");
         }
         function loadtoLocal(){
-            const input1 =localStorage.getItem("mydata");
+            const input =document.getElementById("localInput").value;
+            const input1 =localStorage.getItem(input);
             document.getElementById("LocalOutput").innerHTML=input1;
         }
     </script>
