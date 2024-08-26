@@ -4,12 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* Simple box container design */
+        #results {
+            border: 2px solid #000; /* Black border */
+            padding: 20px;          /* Space inside the box */
+            width: 300px;           /* Width of the box */
+            margin: 20px auto;      /* Center the box horizontally */
+            text-align: center;     /* Center the text */
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+            font-family: Arial, sans-serif; /* Font style */
+            border-radius: 10px;    /* Rounded corners */
+            background-color: #f9f9f9; /* Light background color */
+            
+        }
+    </style>
 </head>
 <body>
     <p id="results"></p>
     <script>
-        const input1 =localStorage.getItem("Username");
-        document.getElementById("results").innerHTML=input1;
+        const input1 = localStorage.getItem("Username");
+        document.getElementById("results").innerHTML = input1 ? input1 : "No username found";
     </script>
 </body>
 </html>

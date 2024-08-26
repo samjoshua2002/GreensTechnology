@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee-Shop</title>
+    <style>
+        body, ul {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background-image: url(./image.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .navbar {
+            background-color: #2a0000;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        i {
+            margin-right: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        ul li {
+            background-color: #2a0000;
+        }
+
+        ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 29px;
+        }
+
+        select {
+            border: none;
+            border-radius: 2px;
+            padding-top: 4px;
+            color: #2a0000;
+            font-size: larger;
+        }
+
+        .thumbnails {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .thumbnail {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .thumbnail img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .thumbnail p {
+            color: #2a0000;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#" class="navbar-brand">
+            <i class="fas fa-coffee"></i> Coffee-Shop
+        </a>
+        <div class="contents">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li>
+                    <select id="filter" onchange="filterThumbnails()">
+                        <option value="all">All</option>
+                        <option value="tea">Tea</option>
+                        <option value="milk">Milk</option>
+                        <option value="coffee">Coffee</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="thumbnails" id="thumbnails">
+        
+        <div class="thumbnail" data-category="coffee">
+            <img src="./image.png" alt="Coffee 1">
+            <p>Hot Coffee</p>
+        </div>
+        <div class="thumbnail" data-category="coffee">
+            <img src="./image.png" alt="Coffee 2">
+            <p>Cold Coffee</p>
+        </div>
+
+        <!-- Tea Thumbnails -->
+        <div class="thumbnail" data-category="tea">
+            <img src="./1558843.jpg" alt="Tea">
+            <p>Tea 1</p>
+        </div>
+        <div class="thumbnail" data-category="tea">
+            <img src="./1558847.jpg" alt="Lemon Tea">
+            <p>Tea 2</p>
+        </div>
+
+        <!-- Milk Thumbnails -->
+        <div class="thumbnail" data-category="milk">
+            <img src="./1751298.jpg" alt="Milk">
+            <p>Milk 1</p>
+        </div>
+        <div class="thumbnail" data-category="milk">
+            <img src="./3201898.jpg" alt="Milk">
+            <p>Milk 2</p>
+        </div>
+    </div>
+
+    <script>
+        function filterThumbnails() {
+            const filter = document.getElementById('filter').value;
+            const thumbnails = document.querySelectorAll('.thumbnail');
+
+            thumbnails.forEach(thumbnail => {
+                if (filter === 'all') {
+                    thumbnail.style.display = 'block';
+                } else if (thumbnail.getAttribute('data-category') === filter) {
+                    thumbnail.style.display = 'block';
+                } else {
+                    thumbnail.style.display = 'none';
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
