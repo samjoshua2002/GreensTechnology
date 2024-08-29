@@ -5,6 +5,7 @@ import { FaThumbsUp, FaThumbsDown } from "react-icons/fa6";
 
 function Login() {
   const [count, setCount] = useState(0);
+  
 
   const handleIncrement = () => {
     setCount(count + 1);
@@ -17,7 +18,7 @@ function Login() {
   };
 
   return (
-    <div className="d-flex justify-content-center align-items-center vh-100 bg-light">
+    <div className="d-flex justify-content-center align-items-center vh-100 bg-dark">
       <div className="border border-dark rounded p-4 shadow-sm bg-white">
         <h1 className="text-center mb-4">Counter</h1>
         {/* <Link to='/dashboard'>
