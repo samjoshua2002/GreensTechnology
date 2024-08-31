@@ -10,7 +10,9 @@ function Shakeen() {
         setData({ ...data, [name]: value });
     };
 
-    const submit = (e) => {
+    const submit = (e) => {  
+
+        
         e.preventDefault();
         if (data.fname.trim() !== '' && data.lname.trim() !== '') {
             setMsg(`Hello ${data.fname} ${data.lname}`);
