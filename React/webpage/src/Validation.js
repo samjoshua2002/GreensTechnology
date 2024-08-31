@@ -11,14 +11,22 @@ function Validation() {
     e.preventDefault(); // Prevent automatic refresh of the page
     if (inputValue.trim() === '') {
       seterrMsg("This field can't be empty");
-    } else if (pwd.trim() === '') {
+    } else if (pwd.trim() === '' ) {
       seterrMsg("Password field can't be empty");
+      
+    }else if (pwd.length < 8) {
+      seterrMsg(" it should be greater than 8 character");
+      
     } else {
       seterrMsg('');
       console.log("Username:", inputValue);
       console.log("Password:", pwd);
       window.location.href = "/";
     }
+  }
+  const clear =()=>{
+    setinputValue('');
+    setpwd('')
   }
 
   return (
@@ -45,11 +53,12 @@ function Validation() {
             />
           </div>
 
-          <div className='text-center mt-3'>
-            <button type='submit' style={{ backgroundColor: '#777', color: '#fff', borderColor: '#444' }}>Submit</button>
+          <div className='text-align-center text-center mt-4 '>
+            <button className="me-5 px-5" type='submit' style={{ backgroundColor: '#777', color: '#fff', borderColor: '#444' }}>Submit</button>
+            <button  className=' px-5'type='button' onClick={clear} style={{ backgroundColor: '#777', color: '#fff', borderColor: '#444' }}>Clear</button>
           </div>
 
-          <div className='p-3 rounded mt-2' style={{ color: '#ff4d4d' }}>
+          <div className='text-center  mt-2' style={{ color: '#ff4d4d' }}>
             {errMsg? <p>{errMsg}</p>:null}
           </div>
         </div>
