@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -56,5 +56,206 @@
     <br>
     <div class="rotate"></div>
     
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black and White Topology Art</title>
+</head>
+<style>
+    /* Fade-in animation for text */
+    @keyframes fadein {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    .fadein {
+        animation: fadein 2s ease-in-out;
+        font-size: 24px;
+        font-family: 'Courier New', Courier, monospace;
+        color: black;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+   
+  
+
+   
+    .chessboard {
+        display: grid;
+        grid-template-columns: repeat(8, 50px);
+        grid-template-rows: repeat(8, 50px);
+        gap: 0;
+        margin: 30px auto;
+        width: 400px;
+        border: 1px solid black;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+        background: linear-gradient(45deg, white, black);
+    }
+    .chessboard div {
+        width: 50px;
+        height: 50px;
+        transition: transform 0.3s ease;
+    }
+    .black {
+        background-color: black;
+    }
+    .black:hover{
+        background-color: red;
+    }
+    .white {
+        background-color: white;
+    }
+
+    /* Hover effect on chessboard */
+    .chessboard div:hover {
+        transform: scale(1.1) rotate(10deg);
+    }
+
+    /* Abstract art topology (black-and-white grid with rotating stripes) */
+    @keyframes grid-stripes {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    .art-grid {
+        width: 200px;
+        height: 200px;
+        display: grid;
+        grid-template-columns: repeat(5, 40px);
+        grid-template-rows: repeat(5, 40px);
+        margin: 20px auto;
+        gap: 5px;
+    }
+    .art-grid div {
+        background: repeating-linear-gradient(
+            45deg,
+            black 0%,
+            black 20%,
+            white 20%,
+            white 40%
+        );
+        width: 100%;
+        height: 100%;
+        animation: grid-stripes 10s linear infinite;
+    }
+
+    /* Overall page styling */
+    body {
+        font-family: 'Courier New', Courier, monospace;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        height: 100vh;
+        overflow: hidden;
+    }
+</style>
+<body>
+
+    <p class="fadein">Welcome to the Art of Black and White</p>
+
+    
+
+    <!-- Chessboard with hover effects -->
+    <div class="chessboard">
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+    </div>
+
+    <!-- Black and white art grid with rotating stripes -->
+    <div class="art-grid">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
 </body>
 </html>
